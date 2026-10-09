@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:in_app_review/in_app_review.dart';
@@ -563,7 +564,6 @@ class _RangePainter extends CustomPainter {
       ..color = theme.wood
       ..strokeWidth = 8
       ..strokeCap = StrokeCap.round;
-    final baseY = center.dy + radius;
     final groundY = size.height * 0.72;
     canvas.drawLine(
         center + Offset(-radius * 0.45, radius * 0.6),
